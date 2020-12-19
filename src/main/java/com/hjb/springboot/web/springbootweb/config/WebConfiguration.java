@@ -20,7 +20,7 @@ public class WebConfiguration {
         registration.setFilter(new MyFilter());
         registration.addUrlPatterns("/*");
         registration.addInitParameter("paramName", "paramValue");
-        registration.setName("MyFilter");
+        registration.setName("MyFilter:");
         registration.setOrder(1);
         return registration;
     }
