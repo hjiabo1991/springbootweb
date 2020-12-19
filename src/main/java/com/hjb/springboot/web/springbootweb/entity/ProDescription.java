@@ -11,4 +11,6 @@ public class ProDescription {
 
     @Value("${com.hjb.description}")
     private String description;
+
+
 }

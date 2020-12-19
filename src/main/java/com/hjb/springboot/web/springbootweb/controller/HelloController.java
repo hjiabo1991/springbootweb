@@ -1,5 +1,6 @@
 package com.hjb.springboot.web.springbootweb.controller;
 
+import com.hjb.springboot.web.springbootweb.entity.ProDescription;
 import com.hjb.springboot.web.springbootweb.entity.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,5 +14,10 @@ public class HelloController {
         user.setUserId("001");
         user.setUserName("hjb");
         return user;
+    }
+    @RequestMapping(value = "/getProDesc")
+    public ProDescription getProDesc() {
+        ProDescription pro = new ProDescription();
+        return pro;
     }
 }
